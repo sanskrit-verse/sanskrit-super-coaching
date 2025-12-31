@@ -43,11 +43,10 @@ window.addEventListener("popstate", function (event) {
 });
 
 document.addEventListener("click", function (e) {
-  const modal = e.target.classList && e.target.classList.contains("modal") ? e.target : null;
-  if (!modal) return;
-
-  const modalId = modal.id;
-  closeModal(modalId);
+  if (e.target.classList.contains("modal") && e.target.classList.contains("show")) {
+     e.stopPropagation(); 
+    const modalId = e.target.id; closeModal(modalId); 
+  } 
 });
 
 document.addEventListener("keydown", function (e) {
