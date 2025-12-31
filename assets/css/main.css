@@ -3249,9 +3249,10 @@ input, select, textarea {
   transform: scale(1.2);      
 }
 
-/* Modal background */
 .modal {
-	display: none;
+	visibility: hidden;
+	/* use visibility instead of display */
+	opacity: 0;
 	position: fixed;
 	z-index: 999;
 	left: 0;
@@ -3259,18 +3260,17 @@ input, select, textarea {
 	width: 100%;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.6);
-	overflow-y: auto;
-	transition: opacity 0.3s ease;
-	opacity: 0;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .modal.show {
-	display: block;
+	visibility: visible;
 	opacity: 1;
 }
+
 .modal-content {
 	background: #fff8dc;
-	
+	/* golden white */
 	margin: 10% auto;
 	padding: 20px;
 	border-radius: 8px;
@@ -3281,11 +3281,11 @@ input, select, textarea {
 	opacity: 0;
 	transition: all 0.3s ease;
 }
+
 .modal.show .modal-content {
 	transform: translateY(0);
 	opacity: 1;
 }
-
 .close {
   color: #000000;
   float: right;
