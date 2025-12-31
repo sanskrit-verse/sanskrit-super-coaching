@@ -1,3 +1,6 @@
+document.addEventListener("touchstart", handleOutsideClose, { passive: true });
+document.addEventListener("mousedown", handleOutsideClose);
+document.addEventListener("click", handleOutsideClose);
 
 (function initHistoryBaseline() {
   if (!history.state || !history.state.baseline) {
@@ -14,6 +17,12 @@ function showText(event, modalId) {
   history.pushState({ modalOpen: modalId }, "", "#" + modalId);
 }
 
+function handleOutsideClose(e) {
+  const modal = e.target.classList && e.target.classList.contains("modal") ? e.target : null;
+  if (!modal) return;
+  const modalId = modal.id;
+  closeModal(modalId);
+}
 
 function closeModal(modalId) {
   const modal = document.getElementById(modalId);
