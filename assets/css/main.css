@@ -3364,7 +3364,7 @@ input, select, textarea {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 	.whatsapp-button-top {
 		display: inline-block;
 	}
@@ -3379,7 +3379,7 @@ input, select, textarea {
 	display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 	.phone-top {
 		display: inline-block;
 	}
