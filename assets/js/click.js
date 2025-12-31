@@ -1,18 +1,20 @@
 function showText(event, modalId) {
   event.preventDefault();
-  document.getElementById(modalId).style.display = "block";
+  const modal = document.getElementById(modalId);
+  modal.classList.add("show");
 }
 
 function closeModal(modalId) {
-  document.getElementById(modalId).style.display = "none";
+  const modal = document.getElementById(modalId);
+  modal.classList.remove("show");
 }
 
 // Optional: close modal when clicking outside
-window.onclick = function(event) {
-  const modals = document.getElementsByClassName("modal");
-  for (let i = 0; i < modals.length; i++) {
-    if (event.target === modals[i]) {
-      modals[i].style.display = "none";
-    }
-  }
+window.onclick = function (event) {
+   const modals = document.getElementsByClassName("modal"); 
+   for (let i = 0; i < modals.length; i++) 
+    { if (event.target === modals[i]) {
+       modals[i].classList.remove("show"); 
+      } 
+    } 
 }
