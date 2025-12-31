@@ -3242,7 +3242,7 @@ input, select, textarea {
 
 /* Hover effects */
 .whatsapp-button:hover {
-  color: #25D366;              /* text turns WhatsApp green */
+  color: #25D366;            
 }
 
 .whatsapp-button:hover .whatsapp-logo {
@@ -3351,4 +3351,42 @@ input, select, textarea {
 
 #two h2 { 
 	color: #1a1603; 
+}
+
+.whatsapp-button-top {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #919191;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+@media (max-width: 768px) {
+	.whatsapp-button-top {
+		display: inline-block;
+	}
+}
+
+.phone-top {
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 16px;
+	color: #919191;
+	transition: all 0.3s ease;
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.phone-top {
+		display: inline-block;
+	}
+}
+
+.phone-bottom {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #000;
+  transition: all 0.3s ease;	
 }
