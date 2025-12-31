@@ -3294,3 +3294,48 @@ input, select, textarea {
 	 text-align: center;
 	 font-family: Arial, sans-serif;
 }
+
+.title-with-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-with-icon h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.expand-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  color: #333;
+  cursor: pointer;
+  flex-shrink: 0;
+  touch-action: manipulation;
+}
+
+/* Bigger icon for mobile */
+@media (max-width: 600px) {
+  .expand-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+#one p { 
+	color: #000; 
+}
+
+
+#two h1 {      
+  color: #0f0d03;            
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  letter-spacing: 0.5px;
+}
+
+
+#two h2 { 
+	color: #1a1603; 
+}
