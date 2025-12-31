@@ -3251,7 +3251,6 @@ input, select, textarea {
 .modal {
 	position: fixed;
 	inset: 0;
-	background: rgba(0, 0, 0, 0.6);
 	z-index: 999;
 	visibility: hidden;
 	opacity: 0;
@@ -3262,6 +3261,12 @@ input, select, textarea {
 	visibility: visible;
 	opacity: 1;
 	pointer-events: auto;
+}
+
+.modal-backdrop {
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.6);
 }
 .modal-content {
 	background: #fff8dc;
