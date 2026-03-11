@@ -9,37 +9,60 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7HY711XTGS"></script>
 	<script>window.dataLayer = window.dataLayer || [];
-		function gtag(){
-		dataLayer.push(arguments);
-	}
-  		gtag('js', new Date());
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
 		gtag('config', 'G-7HY711XTGS');
 	</script>
+	<style>
+		.pulsate-red {
+			color: rgb(255, 150, 52) !important;
+			animation: pulsate-red 1.5s ease-in-out infinite;
+		}
+
+		@keyframes pulsate-red {
+			0% {
+				opacity: 1;
+			}
+
+			50% {
+				opacity: 0.4;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+	</style>
 </head>
+
 <body class="is-preload">
 	<header id="header">
 		<div class="inner">
 			<h1>
 				<span style="font-size:1.6em;">Sanskrit Super Coaching Center</span>
 			</h1>
-			<br/>
+			<br />
 			<a href="#" class="image avatar"><img src="images/dp.jpg" alt="" /></a>
-				<h1>
-					<span style="font-size:0.8em;">Pandit</span>
-					<span style="font-size:1.2em;">Rakesh Hegde</span>
-					<span style="font-size:0.8em;">(MA, B.Ed)</span>
-				</h1>
+			<h1>
+				<span style="font-size:0.8em;">Pandit</span>
+				<span style="font-size:1.2em;">Rakesh Hegde</span>
+				<span style="font-size:0.8em;">(MA, B.Ed)</span>
+			</h1>
 
-				<p1>Experienced Astrologer and Sanskrit Teacher</p1>
-				<br/>
-				<br/>
-				<a href="https://wa.me/91${PHONE_NUMBER}" target="_blank" rel="noopener noreferrer" class="whatsapp-button-top">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo"/>WhatsApp
-                </a>
-				<br/>
-				<a href="tel:+91${PHONE_NUMBER}" class="phone-top">
-							<i class="fa fa-phone"></i> Call Us
-						</a>
+			<p1>Experienced Astrologer and Sanskrit Teacher</p1>
+			<br />
+			<br />
+			<a href="https://wa.me/91${PHONE_NUMBER}" target="_blank" rel="noopener noreferrer"
+				class="whatsapp-button-top">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+					class="whatsapp-logo" />WhatsApp
+			</a>
+			<br />
+			<a href="tel:+91${PHONE_NUMBER}" class="phone-top">
+				<i class="fa fa-phone"></i> Call Us
+			</a>
 		</div>
 	</header>
 
@@ -164,7 +187,7 @@
 				</article>
 
 				<div id="learnModal" class="modal">
-					<div class="modal-backdrop"></div>					
+					<div class="modal-backdrop"></div>
 					<div class="modal-content">
 						<span class="close" onclick="closeModal('learnModal')">&times;</span>
 						<h4>We offer Sanskrit Learning classes</h4>
@@ -193,7 +216,7 @@
 				</article>
 
 				<div id="shlokaModal" class="modal">
-					<div class="modal-backdrop"></div>					
+					<div class="modal-backdrop"></div>
 					<div class="modal-content">
 						<span class="close" onclick="closeModal('shlokaModal')">&times;</span>
 						<h4>We take Shloka classes for Children</h4>
@@ -219,7 +242,7 @@
 				</article>
 
 				<div id="classesModal" class="modal">
-					<div class="modal-backdrop"></div>					
+					<div class="modal-backdrop"></div>
 					<div class="modal-content">
 						<span class="close" onclick="closeModal('classesModal')">&times;</span>
 						<h4>We offer tuition classes for all</h4>
@@ -234,14 +257,15 @@
 			</div>
 		</section>
 		<footer id="footer">
-			<p><i>If you have any queries or want to enquire about pricings and bookings, reach us</i></p>
+			<p class="pulsate-red"><i>If you have any queries or want to enquire about pricings and bookings, reach
+					us</i></p>
 			<div class="inner">
 				<ul class="icons">
 					<li><a href="https://wa.me/91${PHONE_NUMBER}" target="_blank" class="whatsapp-button">
-							<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-        alt="WhatsApp" class="whatsapp-logo"/>
-   WhatsApp
-</a></li>
+							<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+								class="whatsapp-logo" />
+							WhatsApp
+						</a></li>
 					<li>
 						<a href="tel:+91${PHONE_NUMBER}" class="phone-bottom">
 							<i class="fa fa-phone"></i> Call Us
